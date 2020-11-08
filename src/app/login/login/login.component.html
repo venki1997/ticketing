@@ -1,0 +1,30 @@
+<div *ngIf=message class="error">
+    <p>{{message}}</p>
+</div>
+
+<div id="login">
+    <form [formGroup]=credentials>
+        <div class="form-group">
+            <label for="uname">User Name</label>
+            <input id="uname" class="form-control" type="text" formControlName='uname' placeholder="Username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" class="form-control" type="password" formControlName='password' placeholder="Password">
+        </div>
+        <div>
+            <div class='form-group'  id=button >
+                <button class="btn btn-primary" *ngIf=!clicked (click)='onClick()' >{{signup}}</button>
+                <button class="btn btn-primary" *ngIf=clicked disabled>
+                    <span class="spinner-border spinner-border-sm"></span>
+                    Loading..
+                  </button>
+            </div>        
+             <div class="g-signin2 " (click)="signInWithGoogle()" ></div>
+            
+        </div>
+
+
+    </form>
+
+</div>

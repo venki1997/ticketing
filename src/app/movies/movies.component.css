@@ -1,0 +1,83 @@
+
+.sidenav{
+  width: 150px;
+  height: auto;
+  background-color:#3BB9FF;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-left: 10px;
+  float: left;
+}
+.sidenav label{
+  font-size: 10pt;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+  
+}
+.sidenav a{  
+  color: white;
+  font-size: medium; 
+}
+.sidenav li{
+  padding: 10px;
+  margin-left: 13px;
+}
+
+.tamil {
+  margin-left: 200px;
+  top: 0px;
+  
+}
+.hindi {
+  margin-left: 200px;
+}
+.english{
+  margin-left: 200px;
+}
+/* .cards-list {
+  top: 0%;
+  z-index: 0;
+  width: 1095px;
+  display: flex;
+  margin-left: 50px;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.card {
+  
+  width: 270px;
+  height: 360px;
+  border-radius: 8px;
+  margin-right: 70px;
+  cursor: pointer;
+  transition: 0.4s;
+  float: left;
+  margin-top: 15px;
+  }
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 8px;
+  margin-right: 50px;
+ 
+}
+
+.card .card_image img {
+  width: inherit;
+  height: 360px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-size: 270px 420px;
+  background-color: white;
+  
+} */
+
+.spinner{
+  margin-left: 43vw;
+  margin-top: 10vw;
+  height: 50vw;
+}
