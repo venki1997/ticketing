@@ -1,0 +1,28 @@
+.sidenav{
+  width: 200px;
+  position: relative;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #3BB9FF;
+  overflow-x: hidden;
+  padding: 8px 0;
+  float: left;
+  border-radius: 10px;
+  
+}
+.sidenav li{
+    padding: 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: medium;
+}
+.main{
+    margin-left: 200px;
+    width: 1000px;
+    padding: 0px 20px;
+    top: 0px;
+    position:relative;
+    
+}

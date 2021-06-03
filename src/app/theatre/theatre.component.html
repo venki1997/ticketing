@@ -1,0 +1,32 @@
+<div class="spinner" *ngIf=isLoading>
+    <app-spinner></app-spinner>
+</div>
+<div class="row full" *ngIf=!isLoading>
+    <div class="col-sm-3">
+        <div class="img-responsive img-rounded">
+            <img src={{movie.imgPath}} alt={{movie.name}}>
+        </div>
+    </div>
+    <div class='col-sm-9'>
+        <p class="text-capitalize" id="movie">{{movie.name}}</p>
+        <p class="text-capitalize" id="lang">{{movie.lang}}-UA</p>
+        <div id="des">
+            <h3 style="text-decoration: underline;">Synopsis:</h3>
+            <p style="font-family:sans-serif;font-size: 20px;">{{movie.des}}</p>
+        </div>
+
+
+        <div class="theatre">
+            <div class="list " *ngFor='let m of response'>
+                <p><i class="fa fa-film" aria-hidden="true" style="color: rgb(236, 84, 84);"></i>&nbsp;
+                    {{m.theatre}}
+                    <a routerLink='/seat/{{m.theatre}}/{{movie.name}}/{{t}}' *ngFor='let t of m.time'>{{t}}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

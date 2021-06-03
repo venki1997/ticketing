@@ -1,0 +1,50 @@
+/* .cards-list {
+    top: 0%;
+    z-index: 0;
+    width: 1095px;
+    display: flex;
+    margin-left: 50px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+  
+  .card {
+    
+    width: 270px;
+    height: 360px;
+    border-radius: 8px;
+    margin-right: 70px;
+    cursor: pointer;
+    transition: 0.4s;
+    float: left;
+    margin-top: 15px;
+    }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 8px;
+    margin-right: 50px;
+   
+  }
+  
+  .card .card_image img {
+    width: 270px;
+    height: 360px;
+    border-radius: 8px;
+    object-fit: cover;
+    background-size: 270px 420px;
+    background-color: white;
+    
+  } */
+  
+  .spinner{
+    margin-top: 10vw;
+    margin-left: 30vw;
+    height: 50vw;
+  }
+  .movieCard{
+    width: 270px;
+    height: 360px;
+    
+  }

@@ -1,0 +1,45 @@
+<div class="spinner" *ngIf=isLoading>
+   <app-spinner></app-spinner>
+</div>
+<div *ngIf=!isLoading>
+   <div class="movies ml-5 mt-1">
+      <div class="container pl-0">
+         <h3>Movies</h3>
+      </div>
+      <div class="card-columns">
+         <div class="card " style="width: 16.875rem;" *ngFor='let d of movies'>
+            <a routerLink='/theatre/movies/{{d._id}}'><img class='card-img-top img  rounded  '
+                  style="width: 16.875rem;height: 22.5rem; border-radius: 5px;" src={{d.imgPath}} alt={{d.name}}> </a>
+            <div class="card-body" style="width: 16.875rem;">
+               <h5 class="card-title">{{d.name}}</h5>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="events ml-5 mt-1">
+      <div class="container pl-0">
+         <h3>Events</h3>
+      </div>
+      <div class="card-columns">
+
+         <div class="card " style="width: 16.875rem;" *ngFor='let d of events'>
+            <a routerLink='/theatre/event/{{d._id}}'><img class='card-img-top img-rounded ' src={{d.imgPath}}
+                  alt={{d.name}}> </a>
+            <div class="card-body" style="width: 16.875rem;">
+               <h5 class="card-title">{{d.name}}</h5>
+            </div>
+
+         </div>
+      </div>
+   </div>
+
+
+   <!--    <div class='events' >
+     <h3>Events</h3>
+      <div class="cards-list">
+         <div class="card 1" *ngFor='let d of events'>
+            <div class="card_image"><a routerLink='/theatre/events/{{d._id}}'> <img src={{d.imgPath}} alt={{d.name}}> </a></div>
+         </div>
+      </div>
+   </div> -->
+</div>

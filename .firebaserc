@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "movietimes-3162e",
+    "movieticket": "movieticket-front-end",
+    "movietimes": "movietimes-3162e"
+  }
+}

@@ -1,0 +1,50 @@
+.form-group{
+    width: 50vw;
+    padding-left: 10px;
+    margin-top: 30px;
+    
+}
+#login{
+    width: 50vw;
+    margin-left: 25vw;
+    background-color:  #ebebe0;
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    
+}
+input{
+    max-width: 30vw;
+
+}
+.error{
+    margin-left: 25vw;
+    margin-top: 20px;
+    height: 50px;
+    width: 50vw;
+    border:1px solid rgb(204, 18, 18);
+    background-color: rgb(219, 92, 92);
+    border-radius: 5px;
+}
+.error p{
+    font-family: sans-serif;
+    color: white;
+    padding-left: 15vw;
+    padding-top: 10px;
+    font-size: medium;
+
+}
+#button{
+    float: left;
+    position: absolute;
+}
+.g-signin2{
+    margin-left: 20vw;
+    height: 80px; 
+    padding-top: 27px; 
+    
+}
+.abcRioButtonContentWrapper{
+    border-radius: 2px;
+}

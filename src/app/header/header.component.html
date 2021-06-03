@@ -1,0 +1,59 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark " id="nav" style="background-color:#0099cc;">
+    <a class="navbar-brand mr-0 mr-md-2 mb-sm-1" style="font-size: 25px;" href="#">Movies Times</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item ">
+          <a class="nav-link active" routerLink='/movies'>Movie </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link active" href="events">Events</a>
+        </li>
+        <li class="nav-item dropdown">
+          <input type='text' class="form-control mr-sm-4 dropdown-toggle" size="25" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" type="search" placeholder="Search Movies and Events...."
+            aria-label="Search" [(ngModel)]='searchText.name' (keyup)='search()'>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor='let d of movies | filterBy: searchText'><a
+                  routerLink='/theatre/{{d.cat}}/{{d._id}}'>{{d.name}}</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle"></i>
+            Account
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" routerLink='/login/Login'> <i class="fa fa-sign-in"></i> Login</a>
+            <a class="dropdown-item" routerLink='/login/Sign Up'><i class="fa fa-sign-out"></i>Sign Up</a>
+
+          </div>
+        </li>
+        <li class="navbar-item active"><a class="nav-link" routerLink='/manage'> <i class="fa fa-cog"></i>Manage</a></li>
+      </ul>
+
+    </div>
+  </nav>
+  <div class="container-fluid cfld">
+
+
+    <div class='container'>
+      <div id="slider">
+        <figure>
+          <a href="#"><img src="/assets/images/slide 1.jpg"></a>
+          <img src="/assets/images/slide 2.jpg">
+          <img src="/assets/images/slide 3.jpg">
+        </figure>
+      </div>
+    </div>
+  </div>
+</header>

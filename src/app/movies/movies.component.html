@@ -1,0 +1,65 @@
+<div class="spinner" *ngIf=isLoading>
+<app-spinner ></app-spinner>
+</div>
+<div *ngIf=!isLoading>
+   <div class='sidenav' id='left'>
+      <div>
+         <h4 style="padding-left: 8px;color: black;">Language</h4>
+      </div>
+      <ul>
+         <li><a href="{{currentURL}}#tamil">Tamil</a></li>
+         <li><a href='{{currentURL}}#hindi'>Hindi</a></li>
+         <li><a href='{{currentURL}}#english'>English</a></li>
+      </ul>
+      
+
+   </div>
+   <div class='tamil' *ngIf=showTamil id="tamil">
+      <div class="movies ml-5 mt-1">
+         <div class="container pl-0">
+            <h3>Tamil</h3>
+         </div>
+         <div class="card-columns">
+            <div class="card " style="width: 16.875rem;" *ngFor='let d of tamilMovies'>
+               <a routerLink='/theatre/movies/{{d._id}}'><img class='card-img-top img  rounded  '
+                     style="width: 16.875rem;height: 22.5rem; border-radius: 5px;" src={{d.imgPath}} alt={{d.name}}> </a>
+               <div class="card-body" style="width: 16.875rem;">
+                  <h5 class="card-title">{{d.name}}</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="hindi" *ngIf=showHindi id="hindi">
+      <div class="movies ml-5 mt-1">
+         <div class="container pl-0">
+            <h3>Hindi</h3>
+         </div>
+         <div class="card-columns">
+            <div class="card " style="width: 16.875rem;" *ngFor='let d of hindiMovies'>
+               <a routerLink='/theatre/movies/{{d._id}}'><img class='card-img-top img  rounded  '
+                     style="width: 16.875rem;height: 22.5rem; border-radius: 5px;" src={{d.imgPath}} alt={{d.name}}> </a>
+               <div class="card-body" style="width: 16.875rem;">
+                  <h5 class="card-title">{{d.name}}</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="english" *ngIf=showEnglish id="english">
+      <div class="movies ml-5 mt-1">
+         <div class="container pl-0">
+            <h3>English</h3>
+         </div>
+         <div class="card-columns">
+            <div class="card " style="width: 16.875rem;" *ngFor='let d of englishMovies'>
+               <a routerLink='/theatre/movies/{{d._id}}'><img class='card-img-top img  rounded  '
+                     style="width: 16.875rem;height: 22.5rem; border-radius: 5px;" src={{d.imgPath}} alt={{d.name}}> </a>
+               <div class="card-body" style="width: 16.875rem;">
+                  <h5 class="card-title">{{d.name}}</h5>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
